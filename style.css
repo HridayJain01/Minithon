@@ -49,13 +49,15 @@ transform-style: preserve-3d;
   }
   
   #drag-container p {
-    font-family: Serif;
+    font-family: bigmacca;
     position: absolute;
-    top: 100%;
-    left: 50%;
+    top: 89%;
+    left: 77%;
     transform: translate(-50%,-50%) rotateX(90deg);
-    color: #fff;
-  }
+    color: #02d7f2;
+    font-size: 61px;
+
+}
   
   #ground {
     width: 900px;
