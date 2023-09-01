@@ -1,60 +1,286 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+ 
 <head>
     <meta charset="UTF-8">
-    <title>@sky.git - Photo Filters &amp; Captions</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>ENSLAV</title>
+    <link rel="stylesheet"
+          href="Homepage.css">
+    <link rel="stylesheet"
+          href="HomepageResponsive.css">
 </head>
-
+ 
 <body>
-    <img src="Logo.png" alt="Logo" class="logo">
+   
+    <!-- for header part -->
+    <header>
+ 
+        <div class="logosec">
+            <div class="logo">ENSLAV</div>
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn"
+                id="menuicn"
+                alt="menu-icon">
+        </div>
+ 
+        <div class="searchbar">
+            <input type="text"
+                   placeholder="Search">
+            <div class="searchbtn">
+              <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                    class="icn srchicn"
+                    alt="search-icon">
+              </div>
+        </div>
+ 
+        <div class="message">
+            <div class="circle"></div>
+            <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png"
+                 class="icn"
+                 alt="">
+            <div class="dp">
+              <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn"
+                    alt="dp">
+              </div>
+        </div>
+ 
+    </header>
+ 
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img"
+                            alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+ 
+                    <div class="option2 nav-option">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img"
+                            alt="Home">
+                        <h3> Home</h3>
+                    </div>
+ 
+                    <div class="nav-option option3">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img"
+                            alt="report">
+                        <h3> <a href="aboutus/AboutUs.html">About Us</a></h3>
+                    </div>
+ 
+ 
 
-    <figure>
-        <img src="https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
-            alt="Tropical beach" " title=" Photo by Ganapathy Kumar for Unsplash">
-        <figcaption>
-            <div class="caption-title">Sunsets</div>
-            <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
-                nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
-                dolore
-                eveniet commodi ut ratione quidem itaque!</div>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="https://images.unsplash.com/photo-1566371486490-560ded23b5e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-            alt="People looking down at the bay" title="Photo by Tron Le for Unsplash">
-        <figcaption>
-            <div class="caption-title">Adventure</div>
-            <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
-                nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
-                dolore
-                eveniet commodi ut ratione quidem itaque!</div>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
-            alt="Lounges by the water " title="Photo by Yang Wewe for Unsplash">
-        <figcaption>
-            <div class="caption-title">Relaxation</div>
-            <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
-                nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
-                dolore
-                eveniet commodi ut ratione quidem itaque!</div>
-        </figcaption>
-    </figure>
-    <figure>
-        <img src="https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
-            alt="Lounges by the water " title="Photo by Yang Wewe for Unsplash">
-        <figcaption>
-            <div class="caption-title">Relaxation</div>
-            <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
-                nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
-                dolore
-                eveniet commodi ut ratione quidem itaque!</div>
-        </figcaption>
-    </figure>
-    <script src="script.js"></script>
+ 
+                    <div class="nav-option option6">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+                            class="nav-img"
+                            alt="settings">
+                        <h3> Settings</h3>
+                    </div>
+ 
+                    <div class="nav-option logout">
+                        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img"
+                            alt="logout">
+                        <h3>Logout</h3>
+                    </div>
+ 
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+ 
+            <div class="searchbar2">
+                <input type="text"
+                       name=""
+                       id=""
+                       placeholder="Search">
+                <div class="searchbtn">
+                  <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn"
+                        alt="search-button">
+                  </div>
+            </div>
+ 
+            <div class="box-container">
+ 
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">60.5k</h2>
+                        <h2 class="topic">Article Views</h2>
+                    </div>
+ 
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                        alt="Views">
+                </div>
+ 
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">150</h2>
+                        <h2 class="topic">Likes</h2>
+                    </div>
+ 
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png"
+                         alt="likes">
+                </div>
+ 
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">320</h2>
+                        <h2 class="topic">Comments</h2>
+                    </div>
+ 
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+                        alt="comments">
+                </div>
+ 
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">70</h2>
+                        <h2 class="topic">Published</h2>
+                    </div>
+ 
+                    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+            </div>
+            <style>
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+
+}
+figure {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0 10px;
+    border-radius: 0.6rem;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+figcaption {
+    background-color: rgba(48, 48, 48, 0.3);
+    color: #fff2de;
+    padding: 10px 15px;
+    margin: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.caption-title {
+    font-size: 1.2em;
+}
+
+.caption-full {
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.expanded {
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(48, 48, 48, 0.7);
+}
+
+.visible {
+    opacity: 100;
+}
+
+.image-filter {
+    filter: blur(5px) contrast(90%);
+}
+            </style>
+ 
+            <div class="about">
+
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+                        alt="Tropical beach" " title=" Photo by Ganapathy Kumar for Unsplash">
+                    <figcaption>
+                        <div class="caption-title">Sunsets</div>
+                        <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
+                            nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
+                            dolore
+                            eveniet commodi ut ratione quidem itaque!</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1566371486490-560ded23b5e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                        alt="People looking down at the bay" title="Photo by Tron Le for Unsplash">
+                    <figcaption>
+                        <div class="caption-title">Adventure</div>
+                        <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
+                            nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
+                            dolore
+                            eveniet commodi ut ratione quidem itaque!</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+                        alt="Lounges by the water " title="Photo by Yang Wewe for Unsplash">
+                    <figcaption>
+                        <div class="caption-title">Relaxation</div>
+                        <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
+                            nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
+                            dolore
+                            eveniet commodi ut ratione quidem itaque!</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1597634285596-01fd1bffe116?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80"
+                        alt="Lounges by the water " title="Photo by Yang Wewe for Unsplash">
+                    <figcaption>
+                        <div class="caption-title">Relaxation</div>
+                        <div class="caption-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis pariatur corrupti
+                            nesciunt aliquam! Assumenda, distinctio suscipit dicta at cupiditate optio voluptatem magni numquam
+                            dolore
+                            eveniet commodi ut ratione quidem itaque!</div>
+                    </figcaption>
+                </figure>
+            
+               
+           </div> 
+
+        </div>
+    </div>
+ 
+    <script src="Homepage.js"></script>
 </body>
-
 </html>
