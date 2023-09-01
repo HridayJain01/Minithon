@@ -1,106 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    touch-action: none; 
-  }
-  
-  body {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: #111;
-    perspective: 1000px;
-transform-style: preserve-3d;
-  }
-  
-  #drag-container, #spin-container {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto;
-    transform-style: preserve-3d;
-    transform: rotateX(-10deg);
-  }
-  
-  #drag-container img, #drag-container video {
-                transform-style: preserve-3d;
+    box-sizing: border-box;
+}
+.logo{
     position: absolute;
-    left: 0;
     top: 0;
-    width: 165%;
-    height: 100%;
-    line-height: 200px;
-    font-size: 50px;
-    text-align: center;
-    box-shadow: 0 0 8px #fff;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-  }
-  
-  #drag-container img:hover, #drag-container video:hover {
-    box-shadow: 0 0 15px #fffd;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-  }
-  
-  #drag-container p {
-    font-family: bigmacca;
-    position: absolute;
-    top: 89%;
-    left: 77%;
-    transform: translate(-50%,-50%) rotateX(90deg);
-    color: #02d7f2;
-    font-size: 61px;
 
 }
-  
-  #ground {
-    width: 900px;
-    height: 900px;
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+figure {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0 10px;
+    border-radius: 0.6rem;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+figcaption {
+    background-color: rgba(48, 48, 48, 0.3);
+    color: #fff2de;
+    padding: 10px 15px;
+    margin: none;
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotateX(90deg);
-    background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
-  }
-   @-webkit-keyframes spin {
-    from{
-      
-            transform: rotateY(0deg);
-    } to{
-      
-              transform: rotateY(360deg);
-    }
-  }
-  
-  @keyframes spin {
-    from{
-      
-              transform: rotateY(0deg);
-    } to{
-      
-              transform: rotateY(360deg);
-    }
-  }
-  @-webkit-keyframes spinRevert {
-    from{
-                transform: rotateY(360deg);
-    } to{
-      
-              transform: rotateY(0deg);
-    }
-  }
-  @keyframes spinRevert {
-    from{
-     
-              transform: rotateY(360deg);
-    } to{
-      
-              transform: rotateY(0deg);
-    }
-  }
+    bottom: 0;
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.caption-title {
+    font-size: 1.2em;
+}
+
+.caption-full {
+    opacity: 0;
+    margin-top: 10px;
+}
+
+.expanded {
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(48, 48, 48, 0.7);
+}
+
+.visible {
+    opacity: 100;
+}
+
+.image-filter {
+    filter: blur(5px) contrast(90%);
+}
